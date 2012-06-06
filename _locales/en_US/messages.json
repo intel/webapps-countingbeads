@@ -1,0 +1,26 @@
+{
+	"appName": {"message": "Counting beads"},
+	
+	"ipTitle" : {"message": "counting beads"},
+    "ipStart": {"message": "start"},
+    "ipHowTo": {"message": "how to play"}, 
+	
+	"htpHowManyBeads" : {"message": "how many beads you need to move"},
+	"htpMoveBeads" : {"message": "move 5 green beads"},
+	"htpCountBeads" : {"message": "count as you go"},
+	"htpCupFill" : {"message": "watch the cup fill up!"},
+
+	"startOver" : {"message": "start over?"},
+	
+	
+	"gpYouDidIt" : {"message": "you did it!"}, 
+	"gpGoldStar" : {"message": "gold star!"}, 
+	"gpWayToGo" : {"message": "way to go!"}, 
+	"gpKeepCounting" : {"message": "keep counting!"}, 
+	"gpAwesomeJob" : {"message": "awesome job!"}, 	
+	
+	"fpSlideText" : {"message": "slide to next game"},
+	"fpGoodJob" : {"message": "good job!"},
+	"fpNew" : {"message": "new"}	
+	
+}

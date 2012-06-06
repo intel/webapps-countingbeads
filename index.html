@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<!--
+ * Copyright (c) 2012, Intel Corporation.
+ *
+ * This program is licensed under the terms and conditions of the
+ * Apache License, version 2.0.  The full text of the Apache License is at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+-->
+<html> 
+	<head> 
+        <meta name="viewport" content="width=device-width target-densitydpi=device-dpi initial-scale=1 maximum-scale=1 user-scalable=0" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Counting beads</title> 
+		<link rel="stylesheet" type="text/css" href="css/countingBeads.css"></link>
+                <link rel="stylesheet" type="text/css" href="css/license.css"></link>
+	</head> 
+ 
+	<body>
+		<div id="introPage" class="background"  style="display:block">
+			<div id="logo"> </div>		
+			<div id="fruits"> 
+				<div id="strawBerry"> </div>
+				<div id="orange"> </div>
+				<div id="pear"> </div>
+				<div id="lime"> </div>
+				<div id="blueBerry"> </div>				
+			</div>			
+			<div id="startBtn" class="button btnNormal"> start </div>
+			<div id="howToBtn" class="button btnNormal"> how to play </div>	
+                        <div id="licensebtnl" style="top: 560px; left: 984px;"> i </div>
+		</div>
+	
+	
+		<div id="gamePage" class="background" style="display:none">
+			<div id="gpBars" class="bars">
+				<div id="gpBar0" class="bar0"> </div>
+				<div id="gpBar1" class="bar1"> </div>
+				<div id="gpBar2" class="bar2"> </div>
+				<div id="gpBar3" class="bar3"> </div>
+				<div id="gpBar4" class="bar4"> </div>
+			</div>
+			<div id="quest1" class="quest1">
+				<div id="quest1Num" class="questNum"> </div>
+				<div id="quest1Bead" class="questBead"> </div>
+				<div id="quest1Msg" style="display:none" class="kudoMsg"></div>	
+			</div>
+			<div id="quest2" class="quest2">
+				<div id="quest2Num" class="questNum"> </div>
+				<div id="quest2Bead" class="questBead"> </div>
+				<div id="quest2Msg" style="display:none" class="kudoMsg"></div>			
+			</div>
+			<div id="quest3" class="quest3">
+				<div id="quest3Num" class="questNum"> </div>
+				<div id="quest3Bead" class="questBead"> </div>
+				<div id="quest3Msg"  style="display:none" class="kudoMsg"></div>	
+			</div>
+			
+			<div id="gpCup" class="cup emptyCup"> </div>
+			<div id="gpTotal" class="total"> 0 </div>
+			<div id="gpRestart" style="cursor: pointer"> start over? </div>		
+		</div>
+		
+		<div id="howToPage" class="background" style="display:none">
+			<div id="htpBars" class="bars"> 
+				<div id="htpBar0" class="bar0"> </div>			
+				<div id="htpBar1" class="bar1"> </div>
+				<div id="htpBar2" class="bar2"> </div>
+				<div id="htpBar3" class="bar3"> </div>
+				<div id="htpBar4" class="bar4"> </div>	
+			</div>
+			<div id="htpQuest1" class="quest1">
+				<div id="htpQuest1Num" class="questNum" style="color: #9fca38;"> 5 </div>
+				<div id="htpQuest1Bead" class="questBead"> </div>
+				<div id="quest1Hint"> 
+					<div id="htpQuest1Msg" class="hint msg">how many beads you need to move</div>
+				</div>
+			</div>
+			<div id="htpQuest2" class="quest2">
+				<div id="htpQuest2Num" class="questNum" style="color: #20abc4;"> 1 </div>
+				<div id="htpQuest2Bead" class="questBead"> </div>
+			</div>
+			<div id="htpQuest3" class="quest3">
+				<div id="htpQuest3Num" class="questNum" style="color: #ff8b0e;"> 3 </div>
+				<div id="htpQuest3Bead" class="questBead"> </div>
+			</div>
+			
+			
+			<div id="moveBeadsHint">
+				<div id="moveMsg" class="hint msg">move 5 green beads</div>
+			</div>
+			
+			<div id="countHint">
+				<div id="countMsg" class="hint msg">count as you go</div>
+			</div>
+			
+			<div id="cupFillHint">
+				<div id="cupFillMsg" class="hint msg">watch the cup fill up!</div>
+			</div> 
+
+
+			<div id="htpCup" class="cup emptyCup"> </div>
+			<div id="htpTotal" class="total"> 0 </div>
+			<div id="htpRestart"> start over? </div>	
+		</div>
+		
+		<div id="finishPage" class="background" style="display:none">
+		
+			<div id="bar"> </div>
+			<div id="slideMsg"> slide to next game </div>
+			<div id="fruitBar"  class="ui-widget-content"> 
+				<div id="sbFinishPage"> </div>
+				<div id="orngFinishPage"> </div>
+				<div id="pearFinishPage"> </div>
+				<div id="limeFinishPage"> </div>
+				<div id="bbFinishPage"> </div>					
+			</div>
+			<div id="finishMsg"> good job! </div>
+			<div id="finishCup"> </div>
+			<div id="newBtn"> new </div>
+		</div>
+
+                <div id="licensepage" style="display: none">
+                    <iframe id="licensetext" src="README.txt"></iframe>
+                    <div id="licensebtnu" class="licensebtn">&uarr;</div>
+                    <div id="licensebtnd" class="licensebtn">&darr;</div>
+                    <div id="licensebtnq" class="licensebtn">Back</div>
+                </div>
+
+		<!-- Audio files loaded here -->
+		<audio class="introMusicLoop" loop="true" preload="auto"><source src="audio/IntroMusic_Loop.ogg" type="audio/ogg" /></audio>
+		<audio class="beginGame" preload="auto"><source src="audio/BeginGame.ogg" type="audio/ogg" /></audio>
+		<audio class="fillCup" preload="auto"><source src="audio/Good_FillCup.ogg" type="audio/ogg" /></audio>
+		<audio class="gameWin" preload="auto"><source src="audio/Good_GameWin.ogg" type="audio/ogg" /></audio>
+		<audio class="introMusic" preload="auto"><source src="audio/IntroMusic.ogg" type="audio/ogg" /></audio>
+		<audio class="moveBead" preload="auto"><source src="audio/MoveBead.ogg" type="audio/ogg" /></audio>
+		<audio class="startClick" preload="auto"><source src="audio/StartClick.ogg" type="audio/ogg" /></audio>
+		
+		<script src="jquery-1.7.2.min.js"></script>
+                <script src="license.js"></script>
+		<script language="Javascript" src="countingBeads.js" type="text/javascript"></script>
+	</body> 
+</html> 

@@ -1,0 +1,730 @@
+/*
+ * Copyright (c) 2012, Intel Corporation.
+ *
+ * This program is licensed under the terms and conditions of the 
+ * Apache License, version 2.0.  The full text of the Apache License is at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ */
+
+@font-face {
+    font-family: Slackey;
+    src: url("../fonts/Slackey.ttf") format("opentype");
+}
+
+body {
+    background-position: left top;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -webkit-box-orient: vertical;
+    box-shadow: 5px 5px 20px black;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    overflow: hidden;
+    cursor: default;
+    width: 1024px;
+    height: 600px;
+    margin: 0px;
+    -webkit-user-select: none;
+    background-color: rgb(164,155,139);
+}
+
+.background {
+    background-position: left top;
+    position: absolute;
+    overflow: hidden;
+    cursor: default;
+    width: 1024px;
+    height: 600px;
+}
+
+/* 800 x 480 */
+@media (orientation: landscape) {
+  body { top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%) scale(0.78125, 0.8); }
+}
+/* 1024 x 600 */
+@media (min-width: 1024px) and (min-height: 600px) and (orientation: landscape) {
+  body { top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); }
+}
+/* 1280 x 720 */
+@media (min-width: 1280px) and (min-height: 720px) and (orientation: landscape) {
+  body { top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%) scale(1.25, 1.199); }
+}
+
+/* 480 x 800 */
+@media (orientation: portrait) {
+  body { top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%) rotate(90deg) scale(0.8, 0.78125); }
+}
+/* 600 x 1024 */
+@media (min-width: 600px) and (min-height: 1024px) and (orientation: portrait) {
+  body { top: 0%; left: 0%; -webkit-transform: translate(-50%, -50%) rotate(90deg) translate(50%, -50%); }
+}
+/* 720 x 1230 */
+@media (min-width: 720px) and (min-height: 1230px) and (orientation: portrait) {
+  body { top: 0%; left: 0%; -webkit-transform: translate(-50%, -50%) rotate(90deg) scale(1.2, 1.199) translate(50%, -50%); }
+}
+/* 720 x 1280 */
+@media (min-width: 720px) and (min-height: 1280px) and (orientation: portrait) {
+  body { top: 0%; left: 0%; -webkit-transform: translate(-50%, -50%) rotate(90deg) scale(1.25, 1.199) translate(50%, -50%); }
+}
+
+/* Intro Page styling starts */
+#introPage {
+	background-image: url("../images/intro/background.jpg");
+}
+
+#logo {
+	top: 60px;
+    left: 145px;
+    width: 761px;
+    height: 85px;
+    background-color: #432;
+    -webkit-mask-image: url("../images/intro/counting_beads.png") ;
+	opacity: 0.3;
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;	
+	z:3;
+}
+
+#fruits {
+	top: 200px;
+    left: 277px;
+    width: 520px;
+    height: 169px;
+	position: absolute;	
+	z:3;		
+}
+
+#strawBerry {
+	top: 20px;
+    left: 0px;
+    width: 96px;
+    height: 108px;
+    background-image: url("../images/intro/strawberry.png") ;
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;	
+	z:3;
+}
+
+
+#orange {
+	top: 0px;
+    left: 106px;
+    width: 96px;
+    height: 108px;
+    background-image: url("../images/intro/orange.png") ;
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;	
+	z:3;
+}
+
+#pear {
+	top: 20px;
+    left: 224px;
+    width: 96px;
+    height: 129px;
+    background-image: url("../images/intro/pear.png") ;
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;	
+	z:3;	
+}
+
+#lime {
+	top: 0px;
+    left: 330px;
+    width: 96px;
+    height: 108px;
+    background-image: url("../images/intro/lime.png") ;
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;	
+	z:3;	
+}
+
+#blueBerry {
+	top: 25px;
+    left: 448px;
+    width: 96px;
+    height: 108px;
+    background-image: url("../images/intro/blueberry.png") ;
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;	
+	z:3;	
+}
+
+.button {
+	z:3;
+    width: 397px;
+    height: 107px;
+	left: 325px;
+	background-image: url("../images/buttons/intropage_button.png");
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;	
+	cursor: pointer;
+}
+
+.btnNormal {
+	z:10;
+	text-align: center;
+	font-face:Bold;
+    font-family: Slackey;
+    color: #c3d75c;		
+	line-height: 107px;  
+	text-align: center;
+	transition: font-size 250ms;
+	-webkit-transition: font-size 250ms;
+}
+
+
+#startBtn {
+	top: 359px;	
+	font-size: 38px;      
+}
+
+#howToBtn {
+	top: 477px;
+	font-size: 28px;      
+}
+
+#startBtn:hover, #newBtn:hover, #backBtn:hover{
+	font-size: 48px;
+}
+
+#howToBtn:hover {
+	font-size: 38px;
+}
+
+
+body:hover #strawBerry{
+	-webkit-animation: strawBerryWave 1000ms infinite alternate ease-in-out;		
+}
+
+@-webkit-keyframes strawBerryWave {
+	0% {top:  20px; } 
+	100% {top: 0px;}
+}
+
+body:hover #orange{
+	-webkit-animation: orangeWave 1000ms infinite alternate ease-in-out;		
+	-webkit-animation-delay:50ms;
+}
+
+@-webkit-keyframes orangeWave {
+	0% {top:  0px; } 
+	100% {top: 20px;}
+}
+
+body:hover #pear{
+	-webkit-animation: pearWave 1000ms infinite alternate ease-in-out;	
+	-webkit-animation-delay:500ms;
+}
+
+@-webkit-keyframes pearWave {
+	0% {top:  20px; } 
+	100% {top: 0px;}
+}
+
+body:hover #lime{
+	-webkit-animation: limeWave 1000ms infinite alternate ease-in-out;		
+	-webkit-animation-delay:750ms;
+}
+
+@-webkit-keyframes limeWave {
+	0% {top:  0px; } 
+	100% {top: 20px;}
+}
+
+body:hover #blueBerry{
+	-webkit-animation: blueBerryWave 1000ms infinite alternate ease-in-out;	
+	-webkit-animation-delay:1000ms;	
+}
+
+@-webkit-keyframes blueBerryWave {
+	0% {top:  25px; } 
+	100% {top: 0px;}
+}
+
+/* Intro Page styling ends */
+
+
+/* Game Page styling starts */
+#gamePage {
+	background-image: url("../images/beads_background.jpg");
+}
+
+.bars {
+	z:3;
+    width: 713px;
+    height: 460px;
+	left: 278px;
+	top: 72px;
+	background-image: url("../images/bars_group.png");
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;		
+}
+
+.cup {
+	z:3;
+    width: 72px;
+    height: 107px;
+	left: 28px;
+	top: 385px;
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;	
+}
+
+.emptyCup {
+	background-image: url("../images/cup character/empty_cup.png");
+}
+
+.quarterCup {
+	background-image: url("../images/cup character/quarter_cup.png");
+}
+
+.halfCup {
+	background-image: url("../images/cup character/half_cup.png");
+}
+
+.fullCup {
+	background-image: url("../images/cup character/full_cup.png");
+}
+
+.total {
+	z:3;
+	text-align: center;
+	font-face:Bold;
+    font-family: Slackey;
+    color: #6d4a3a;		
+	width: 110px;
+    height: 96px;	
+	left: 140px;
+	top: 395px;
+	font-size: 38pt;  
+    line-height: 96px;  
+	text-align: center;
+	position: absolute;	
+    display: block;
+}
+
+#gpRestart, #htpRestart {
+	z:3;
+	font-family: Slackey;
+	color: #e7462b;		
+	left: 28px;
+	top: 511px;
+	width: 235px;
+    height: 37px;	
+	font-size: 18pt;  
+    line-height: 37px;  
+	text-align: center;
+	position: absolute;	
+    transition: font-size 250ms;
+	-webkit-transition: font-size 250ms;
+}
+
+#gpRestart:hover, #htpRestart:hover {
+	font-size: 24pt;
+}
+
+.questNum {
+	z:10;
+	left:20%;
+	top: 5%;
+	height: 96px;
+	width: 85px;
+	font-family: Slackey;
+	font-size: 58pt;  
+    line-height: 96px;  
+	text-align: center;
+	position: absolute;
+	display: block;
+}
+
+.questBead {
+	z:10;
+	left:60%;
+	top: 35%;
+	height: 31px;
+	width: 33px;	
+	position: absolute;
+	display: block;
+}
+
+
+.quest1 {
+	left:28px;
+	top: 22px;
+	height:105px;
+	width:215px;
+	position: absolute;
+	display: none;
+}
+
+.quest2 {
+	left:28px;
+	top: 147px;
+	height:105px;
+	width:215px;
+	position: absolute;
+	display: none;
+}
+
+.quest3 {
+	left:28px;
+	top: 272px;
+	height:105px;
+	width:215px;
+	position: absolute;
+	display: none;
+}
+
+
+.quest4 {
+	left:28px;
+	top: 397px;
+	height:105px;
+	width:215px;
+	position: absolute;
+	display: none;
+}
+
+.kudoMsg {
+	z:10;	
+	top:50%;
+	left:0px;
+	width:100%;
+	position: absolute;	
+	text-align: center;
+	font-family: Slackey;
+	font-size: 28px;  
+    line-height: 1.2em;  
+	display: block;
+	word-wrap: break-word;
+	-webkit-transform: translateY(-50%); 
+}
+
+.bar0 {
+	left:5px;
+	top: -20px;
+	height:53px;
+	width:700px;
+	position: absolute;	
+}
+
+.bar1 {
+	left:5px;
+	top: 94px;
+	height:46px;
+	width:700px;
+	position: absolute;	
+}
+
+.bar2 {
+	left:5px;
+	top: 190px;
+	height:63px;
+	width:700px;
+	position: absolute;	
+}
+
+.bar3 {
+	left:5px;
+	top: 321px;
+	height:46px;
+	width:700px;
+	position: absolute;	
+}
+
+.bar4 {
+	left:5px;
+	top: 432px;
+	height:46px;
+	width:700px;
+	position: absolute;	
+}
+
+/* Game Page style ends*/
+
+
+/* How To Page style starts */
+#howToPage {
+	background-image: url("../images/beads_background.jpg");
+}
+
+#htpQuest1 {
+	display: "block";
+}
+
+#htpQuest2 {
+	display: "block";
+}
+
+#htpQuest3 {
+	display: "block";
+}
+#htpQuest1Bead {
+	background-image : url("../images/counter dots/green_counter.png"); 
+	display:block;
+}
+#htpQuest2Bead {
+	background-image : url("../images/counter dots/blue_counter.png"); 
+	display:block;
+}
+#htpQuest3Bead {
+	background-image : url("../images/counter dots/orange_counter.png"); 
+	display:block;
+}
+
+#quest1Hint {
+	z:7;	
+	width: 834px;
+    height: 225px;	
+	left: 75%;
+	top: -25%;	
+	position: absolute;	
+	background-image: url("../images/direction page/direction_1.png");
+    display: block;
+}
+
+
+.msg {
+	z:10;	
+	top:10%;
+	left:10%;
+	height:75%;
+	width: 80%;
+	position: absoulte;	
+	text-align: center;
+}
+
+.hint {
+	z:3;
+	font-family: Slackey;
+	color: #c3d75c;		
+	font-size: 46px;  
+    line-height: 89px;  
+	text-align: center;
+	display: block;
+	max-width: 834px;
+	position: absolute;	
+	word-wrap: break-word;
+}
+
+#moveBeadsHint {
+	z:7;	
+	width: 327px;
+    height: 365px;	
+	left: 559px;
+	top: 50px;	
+	position: absolute;	
+	background-image: url("../images/direction page/direction_2.png");
+    display: none;	
+}
+
+#countHint { 
+	z:7;	
+	width: 449px;
+    height: 250px;	
+	left: 226px;
+	top: 285px;	
+	position: absolute;	
+	background-image: url("../images/direction page/direction_3.png");
+    display: none;	
+}
+
+#cupFillHint {
+	z:7;	
+	width: 426px;
+    height: 274px;	
+	left: 10px;
+	top: 140px;	
+	position: absolute;	
+	background-image: url("../images/direction page/direction_4.png");
+    display: none;	
+}
+
+
+/* How To Page style ends */
+
+/* Finish Page style starts */
+
+#finishPage {
+	background-image: url("../images/finished page/slider_background.jpg");
+}
+
+#bar {
+	z:3;	
+	width: 1024px;
+    height: 23px;	
+	left: 0px;
+	top: 444px;	
+	position: absolute;	
+	background-image: url("../images/finished page/bar.png");
+    display: block;	
+}
+
+#fruitBar {
+	z:5;	
+	width: 1024px;
+    height: 128px;	
+	left: 20px;
+	top: 366px;	
+	position: absolute;	
+}
+
+body:hover #sbFinishPage, #orngFinishPage, #pearFinishPage, #limeFinishPage, #bbFinishPage, #finishCup{
+	-webkit-animation: fruitsRock 1000ms infinite alternate ease-in-out;		
+}
+
+@-webkit-keyframes fruitsRock {	
+	0% { -webkit-transform: rotate(4deg);} 
+	100% {-webkit-transform: rotate(-4deg);}
+}
+
+#sbFinishPage {
+	top: 22px;
+    left: 0px;
+    width: 96px;
+    height: 110px;
+    background-image: url("../images/finished page/strawberry.png") ;
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;	
+	z:7;
+}
+
+
+#orngFinishPage {
+	top: 37px;
+    left: 87px;
+    width: 96px;
+    height: 93px;
+    background-image: url("../images/finished page/orange.png") ;
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;		
+	z:7;
+}
+
+#pearFinishPage {
+	top: 2px;
+    left: 175px;
+    width: 94px;
+    height: 128px;
+    background-image: url("../images/finished page/pear.png") ;
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;	
+	z:7;	
+}
+
+#limeFinishPage {
+	top: 37px;
+    left: 261px;
+    width: 96px;
+    height: 93px;
+    background-image: url("../images/finished page/lime.png") ;
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;	
+	z:7;	
+}
+
+#bbFinishPage {
+	top: 37px;
+    left: 345px;
+    width: 96px;
+    height: 93px;
+    background-image: url("../images/finished page/blueberry.png") ;
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;	
+	z:7;	
+}
+
+#finishMsg {
+	z:3;
+	font-family: Slackey;
+	color: #6d4a3a;	
+	left: 153px;
+	top: 80px;
+	width: 682px;
+    height: 122px;	
+	font-size: 68pt;  
+    line-height: 122px;  
+	text-align: center;
+	position: absolute;	
+	display: block;
+}
+
+#slideMsg {
+	z:3;
+	font-family: Slackey;
+	color: #c0db87;	
+	left: 487px;
+	top: 397px;
+	width: 450px;
+    height: 75px;	
+	font-size: 28pt;  
+    line-height: 50px;  
+	text-align: left;
+	position: absolute;	
+	display: block;
+}
+
+#finishCup {
+	top: 100px;
+    left: 835px;
+    width: 129px;
+    height: 173px;
+    background-image: url("../images/finished page/cup.png") ;
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;	
+	z:7;
+}
+
+#newBtn {
+	z:3;
+    width: 270px;
+    height: 80px;
+	left: 387px;
+	top: 250px;
+	background-image: url("../images/buttons/finishpage_button.png");
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;		
+	text-align: center;
+	font-size: 38px; 
+	font-face:Bold;
+    font-family: Slackey;
+    color: #c3d75c;		
+	line-height: 80px;  
+	transition: font-size 250ms;
+	-webkit-transition: font-size 250ms;
+}
+
+#slideMsg:hover #fruitBar {
+	-webkit-animation: fruitBarSlide 1000ms infinite alternate linear;		
+}
+
+@-webkit-keyframes fruitBarSlide {
+	0% {left:  20px; } 
+	100% {left: 100px;}
+}
+
+/* Finish Page style ends */
+
+

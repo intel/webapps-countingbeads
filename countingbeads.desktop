@@ -1,0 +1,14 @@
+
+[Desktop Entry]
+Version=1.0
+Name=Counting Beads
+Comment=A basic counting machine like in the ancient times targeting young kids 
+GenericName=Counting Beads
+Exec=chromium-browser --enable-plugins --enable-extensions --enable-user-scripts --enable-printing --enable-sync --use-gl=egl --ignore-gpu-blacklist --auto-ssl-client-auth %U --app-id=ifmhnknimdambbneoinahoamdmgcbdel --load-extension=/usr/share/countingbeads/ --no-first-run
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=countingbeads
+Categories=Game;
+StartupWMClass=Chromium
+StartupNotify=true
