@@ -7,7 +7,7 @@
 A Counting beads application implemented in HTML5/JavaScript targeting 
 young kids to teach them the basic counting.
 
-Author: Sirisha Muppavarapu <sirisha.muppavarapu@intel.com>
+Author/Owner: Sirisha Muppavarapu <sirisha.muppavarapu@intel.com>
 
 Technical Details: This application is written using HTML5/css3/jquery 
 javascript library and is distributed under Apache2.0 license. 
