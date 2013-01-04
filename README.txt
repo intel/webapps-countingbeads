@@ -22,12 +22,14 @@ http://jquery.org/license
 
 IMAGES
 ----------------------------------------------------------------------------
+
 all images are created by Intel Corp.
 they are licensed under the Creative Commons Attribution 3.0 license
 http://creativecommons.org/licenses/by/3.0/us/
 
 FONTS 
 ----------------------------------------------------------------------------
+
 Google web font - Slackey
 http://www.google.com/webfonts#UsePlace:use/Collection:Slackey
 Apache License, version 2.0
@@ -35,6 +37,7 @@ Apache License, version 2.0
 
 SOUNDS
 ----------------------------------------------------------------------------
+
 BeginGame.ogg
 Origin: http://www.freesound.org/people/JKrint1/sounds/53440/
 License: http://creativecommons.org/licenses/sampling+/1.0/
@@ -77,8 +80,7 @@ License: http://creativecommons.org/licenses/by/3.0/
 Origin: http://www.freesound.org/people/Dalibor/sounds/34266/
 License: http://creativecommons.org/publicdomain/zero/1.0/
 
-
 KNOWN ISSUES
 --------------------------------------------------------------------------------------
-1) At end of a game when user asked to start over if there is no input from user in about 5 seconds 
-the app will start with out the user input
+
+1) At end of a game when user asked to start over if there is no input from user in about 5 seconds the app will start with out the user input
