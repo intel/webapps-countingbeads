@@ -1,18 +1,18 @@
 ----------------------------------------------------------------------------
-												
+
     COUNTING BEADS
 
 ----------------------------------------------------------------------------
 
-A Counting beads application implemented in HTML5/JavaScript targeting 
+A Counting beads application implemented in HTML5/JavaScript targeting
 young kids to teach them the basic counting.
 
 Author/Owner: Sirisha Muppavarapu <sirisha.muppavarapu@intel.com>
 
-Technical Details: This application is written using HTML5/css3/jquery 
-javascript library and is distributed under Apache2.0 license. 
+Technical Details: This application is written using HTML5/css3/jquery
+javascript library and is distributed under Apache2.0 license.
 
-License for the app is found in the file "LICENSE" and the license for 
+License for the app is found in the file "LICENSE" and the license for
 JQuery and assets components is as below:
 
 jQuery JavaScript Library v1.7.2
@@ -27,7 +27,7 @@ all images are created by Intel Corp.
 they are licensed under the Creative Commons Attribution 3.0 license
 http://creativecommons.org/licenses/by/3.0/us/
 
-FONTS 
+FONTS
 ----------------------------------------------------------------------------
 
 Google web font - Slackey

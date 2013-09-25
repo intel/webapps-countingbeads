@@ -32,7 +32,8 @@ module.exports = function (grunt) {
     uglify: {
       dist: {
         files: {
-          'build/app/js/annex.js': ['app/js/annex.js'],
+          'build/app/js/countingBeads.js': ['app/js/countingBeads.js'],
+          'build/app/js/license.js': ['app/js/license.js'],
           'build/app/js/scaleBody.js': ['app/js/scaleBody.js']
         }
       }
@@ -42,8 +43,8 @@ module.exports = function (grunt) {
     cssmin: {
       dist: {
         files: {
-          'build/app/css/annex.css': ['app/css/annex.css'],
-          'build/app/css/i18n.css': ['app/css/i18n.css']
+          'build/app/css/countingBeads.css': ['app/css/countingBeads.css'],
+          'build/app/css/license.css': ['app/css/license.css']
         }
       }
     },
@@ -52,10 +53,8 @@ module.exports = function (grunt) {
       common: {
         files: [
           { expand: true, cwd: '.', src: ['app/lib/**'], dest: 'build/' },
-          { expand: true, cwd: '.', src: ['app/fonts/**'], dest: 'build/' },
           { expand: true, cwd: '.', src: ['app/audio/**'], dest: 'build/' },
           { expand: true, cwd: '.', src: ['LICENSE'], dest: 'build/app/' },
-          { expand: true, cwd: '.', src: ['README.txt'], dest: 'build/app/' },
           { expand: true, cwd: '.', src: ['app/_locales/**'], dest: 'build/' }
         ]
       },
@@ -152,7 +151,7 @@ module.exports = function (grunt) {
       install: {
         action: 'install',
         remoteFiles: {
-          pattern: '/home/developer/annex*.wgt',
+          pattern: '/home/developer/CountingBeads*.wgt',
           filter: 'latest'
         }
       },
