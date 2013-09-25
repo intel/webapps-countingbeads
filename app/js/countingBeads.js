@@ -681,5 +681,7 @@ function gamesound(id, loop) {
 
 $(document).ready(function()
 {
+    scaleBody(document.getElementsByTagName("body")[0], 720);
+
 	init();
 });
