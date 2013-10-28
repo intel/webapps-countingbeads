@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: Slackey;
-    src: url(../lib/slackey-font/Slackey.ttf);
+    src: url(../lib/slackey-font/index.woff);
 }
 
 body {
