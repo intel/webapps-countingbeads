@@ -1,6 +1,6 @@
 {
   "name": "CountingBeads",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Counting game for kids.",
   "main": "app/index.html",
   "scripts": {
